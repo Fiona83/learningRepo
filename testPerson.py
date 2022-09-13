@@ -27,7 +27,7 @@ class Person(object):
     return self._gender
 
   @age.setter
-  def age(age):
+  def age(self, age):
     self._age = age
     return self._age
 
@@ -35,6 +35,11 @@ class Person(object):
   def __str__(self):
     return "%s is %s years old." % (self._name, self._age)
 
-age = input("Please input the age:")
-fiona = Person("Fiona", age, "f")
+# main function
+fiona = Person("Fiona", 35, "f")
+print(fiona)
+
+# update the age
+age = input("Please update the age:")
+fiona.age = age
 print(fiona)
