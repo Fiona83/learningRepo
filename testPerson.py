@@ -7,33 +7,51 @@
 
 class Person(object):
 
-  __slots__ = ('_name', '_age', '_gender')
+    __slots__ = ('_name', '_age', '_gender')
 
-  def __init__(self, name, age, gender):
-    self._name = name
-    self._age = age
-    self._gender = gender
+    def __init__(self, name, age, gender):
+        self._name = name
+        self._age = age
+        if gender != "m" and gender != "f":
+            print("Invalid gender for %s. (m/f)" % self._name)
+            quit()
+        self._gender = gender
+        # debugging
+        # print(type(self._name), type(self._age), type(self._gender))
 
-  @property
-  def name(self):
-    return self._name
+    def __str__(self):
+        return "%s is " % self._name + "%d years old." % self._age
 
-  @property
-  def age(self):
-    return self._age
+    @property
+    def name(self):
+        return self._name
 
-  @property
-  def gender(self):
-    return self._gender
+    @property
+    def age(self):
+        return self._age
 
-  @age.setter
-  def age(self, age):
-    self._age = age
-    return self._age
+    @property
+    def gender(self):
+        return self._gender
+
+    @age.setter
+    def age(self, age):
+        self._age = age
+        return self._age
 
 
-  def __str__(self):
-    return "%s is %s years old." % (self._name, self._age)
+
+    def watch_tv(self):
+        # try this compact coding style
+        tv = "Netflix" if self._age >= 18 else "Youtube Kids"
+        return tv
+        """
+        if self._age < 18:
+            tv = "Youtube Kids"
+        else:
+            tv = "Netflix"
+        return tv
+        """
 
 # main function
 fiona = Person("Fiona", 35, "f")
@@ -41,5 +59,13 @@ print(fiona)
 
 # update the age
 age = input("Please update the age:")
-fiona.age = age
+fiona.age = int(age)
 print(fiona)
+
+ella = Person("Ella", 4, "f")
+print("%s is watching %s." % (ella.name, ella.watch_tv()))
+print("%s is watching %s." % (fiona.name, fiona.watch_tv()))
+
+# test gender control
+#wang = Person("Lao Wang", 50, "k")
+#print(wang)
