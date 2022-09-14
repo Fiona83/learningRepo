@@ -20,7 +20,10 @@ class Person(object):
         # print(type(self._name), type(self._age), type(self._gender))
 
     def __str__(self):
-        return "%s is " % self._name + "%d years old." % self._age
+        #return "%s is " % self._name + "%d years old." % self._age
+        strGender = "male" if self._gender == "m" else "female"
+        return "Name: %s, Age: %d, Gender: %s" % \
+        (self._name, self._age, strGender)
 
     @property
     def name(self):
@@ -63,8 +66,11 @@ fiona.age = int(age)
 print(fiona)
 
 ella = Person("Ella", 4, "f")
+eddie = Person("Eddie", 1, "m")
 print("%s is watching %s." % (ella.name, ella.watch_tv()))
 print("%s is watching %s." % (fiona.name, fiona.watch_tv()))
+print("%s is watching %s" % (eddie.name, eddie.watch_tv()))
+
 
 # test gender control
 #wang = Person("Lao Wang", 50, "k")
