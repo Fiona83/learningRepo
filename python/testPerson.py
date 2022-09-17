@@ -1,9 +1,14 @@
-# This file is added to the repository for a part of the assignment from my Coursera course "Getting started with Git and GitHub"
-# the code is also a part of my self learning of Python
-# Test the abnormal written style of if statement
+"""
+This file is added to the repository for a part of the assignment
+from my Coursera course "Getting started with Git and GitHub".
+The code is also a part of my self learning of Python.
+
++ Test the abnormal written style of if statement
 
 # Author: Fiona Chen
 # Date: 2022-09-13
+"""
+
 
 class Person(object):
 

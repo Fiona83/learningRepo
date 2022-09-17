@@ -1,10 +1,12 @@
 """
-This original game has several problems:
-1. the input must be captialized, otherwise will cause a trackback
+This original code is downloaded from jackfrued's Python-100-days
+https://github.com/jackfrued/Python-100-Days
+The original game has several problems:
+1. the input must be in upper case, otherwise will cause a trackback
 2. the game won't stop until 9 blanks are filled, even one player wins,
 the game won't stop
 
-change:
+my modifications:
 1. add upper() to cast the input into upper cause
 2. define a is_win function to test if someone has won. If so, end the
 game.
