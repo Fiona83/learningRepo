@@ -57,3 +57,26 @@ tags = soup('a')
 ```
 
 Now with a for loop we can retrieve all the links in the page.
+
+#### 2.3 Retrieve url from the \<a\>\</a\> tag
+The following code can retrieve the url from the \<a href="..."\>...\</a\> tag. href will be the http://..... address.
+
+```Python
+href = tag.get('href', None)
+up = urlparse(href)
+```
+
+Interesting thing is use ***urlparse()*** method we can slpit the url into several parts. Please see the example below.
+```
+https://www.coursera.org/instructor/drchuck
+ParseResult(scheme='https', netloc='www.coursera.org', path='/instructor/drchuck', params='',
+ query='', fragment='')
+```
+Use the results of *urlparse()* we can cleanup retrieved url. \# in the URL is to tell the browser, when open the page please scroll down to the position specified by \#. Since this is a pure browser action, and has nothing to do with retrieving data from server, we can remove all the things after \#.
+
+```Python
+if ( len(up.scheme) < 1 ) :
+      href = urljoin(web, href)
+ipos = href.find('#')
+if ( ipos > 1 ) : href = href[:ipos]
+```

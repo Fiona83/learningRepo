@@ -29,7 +29,12 @@ if ( starturl.endswith('.htm') or starturl.endswith('.html') ) :
 
 # open the url
 # document is like a file handel, and includes all the header of the page
-document = urlopen(web, context=ctx)
+try:
+    document = urlopen(web, context=ctx)
+except Exception as err:
+    print('Unable to retrieve the page.', err)
+    quit()
+
 html = document.read()
 print(type(html))
 print(type(document), document.getcode(), document.info().get_content_type())
