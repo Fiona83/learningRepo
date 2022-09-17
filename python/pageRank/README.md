@@ -49,7 +49,7 @@ if document.info().get_content_type() != 'html/text':
 
 
 #### 2.2 Parse the html data using BeautifulSoup
-Use ***BeautifulSoup(data, "html.parser")*** will return a handle and soup('a') can return a list of all the a tag "<a href="...">...</a>".
+Use ***BeautifulSoup(data, "html.parser")*** will return a handle and soup('a') can return a list of all the a tag \<a href="..."\>...\</a\>.
 
 ```Python
 soup = BeautifulSoup(html, "html.parser")
