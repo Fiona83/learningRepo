@@ -13,6 +13,8 @@ code: web_crawl_1.py
 #### 1.1 remove the last / from the url
 Use endswith() function to check if the url ends with /.
 If it is so, use str[:-1] to strip the last /.
-'''
+
+```
 if ( starturl.endswith('/') ) : starturl = starturl[:-1]
-'''
+```
+
