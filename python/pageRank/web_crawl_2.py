@@ -114,7 +114,7 @@ while True:
     # open the url
     # document is like a file handel, and includes all the header of the page
     try:
-        document = urlopen(web, context=ctx)
+        document = urlopen(url, context=ctx)
 
         html = document.read()
         #print(type(html))
