@@ -15,14 +15,15 @@ data: 2022-09-20
 """
 
 import sqlite3
+import fertility_mapper as FM
 
 
 # create database
 conn = sqlite3.connect('fertility.sqlite')
 cur = conn.cursor()
 
-mkids_mapper = {'no':0, 'yes':1}
-gender_mapper = {'male':0, 'female':1}
+mkids_mapper = FM.MKIDS
+gender_mapper = FM.GENDER
 
 
 # create the table of Ethnicities
