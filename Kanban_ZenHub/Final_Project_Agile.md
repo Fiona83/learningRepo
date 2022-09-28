@@ -27,9 +27,9 @@
      Given [some context]
      When [certain action is taken]
      Then [the outcome of action is observed]
-     ` ` ` <!-- Here should not have space between ` -->
+     ` ` `
    ```
+   <!-- Here should not have space between ``` -->
+   
    - edit the template name to 'User Story' and add some description to it
    - press 'Propose changes' and then 'Commit changes' to save the change. After that, you should now have a new folder in your repository called '.github/ISSUE_TEMPLATES', which will contain your new user story template.
-
-    
