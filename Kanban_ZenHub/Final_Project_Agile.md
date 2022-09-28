@@ -33,3 +33,8 @@
 
    - edit the template name to 'User Story' and add some description to it
    - press 'Propose changes' and then 'Commit changes' to save the change. After that, you should now have a new folder in your repository called '.github/ISSUE_TEMPLATES', which will contain your new user story template.
+
+6. Create all the user stories
+   - select 'new issue'
+   - from the Template dropdown, select User Story
+   - Enter the title for the first story and fill out just the user story section (i.e., As a, I need, So that) for now. 
