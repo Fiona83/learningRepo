@@ -5,7 +5,7 @@
 1. Sign in or sign up a GitHub account
 2. Create a GitHub repository called "agile-final-project" and make it public.
 
-## Step 2: ZenHub Workspace linded to the GitHub Repository ##
+## Step 2: ZenHub Workspace linked to the GitHub Repository ##
 3. Create a ZenHub account for free. You may still use ZenHub later for open source project. Alternatively, you can log into ZenHub using your GitHub account.
 4. Create a workspace in ZenHub called "Final Project" that is linked to the repository.
 
@@ -33,7 +33,7 @@
      Then [the outcome of action is observed]
      ` ` `
    ```
-   *Here should not have space between the backtick \`, add it just for the markdown syntax*
+   *Here should not have space between the backquote \`, add it just for the markdown syntax*
 
    - edit the template name to 'User Story' and add some description to it
    - press 'Propose changes' and then 'Commit changes' to save the change. After that, you should now have a new folder in your repository called '.github/ISSUE_TEMPLATES', which will contain your new user story template.
