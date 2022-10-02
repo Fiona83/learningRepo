@@ -51,6 +51,7 @@ print(list_exMem)
 ```
 
 **String Format Syntax**
+
 Here in this file we notice that the lines are generate in a particular format. To realise this the **format syntax** are used.
 
 ```Python
@@ -115,6 +116,7 @@ with open(exReg,'r') as readFile:
 
 ```
 ### Recommended answer ###
+
 Different from my answer, this solution use **readlines()** to directly read all the lines from the **members.txt** into a list. Header line is the first element in the list and use **pop(0)** to delete it from the list.
 
 Then it use the list comprehension to generate a list of inactive members. Notice that in the list there are no names in it, so "'no' in member" works. If the there are names in the list, this may cause some unexpected results.
