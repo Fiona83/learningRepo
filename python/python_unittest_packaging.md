@@ -51,3 +51,31 @@ if __name__ = '__main__':
 
 ```
 
+# Python Packaging
+
+Packaging is to package multiple modules into one big package.
+1. All the modules of the package should be placed in one folder.
+2. Create a ***\_\_init\_\_.py***, within the file we should import all the modules as follows:
+
+```python
+from . import module1
+from . import module2
+```
+
+3. To use the functions in the package, we can import the whole package and call the function as follows:
+
+```python
+import package
+# call the function
+package.module1.function1()
+```
+
+or we can import the functions as follows:
+
+```python
+from package.module1 import function1, function2
+from package.module2 import function3, function4
+# call the function
+function1()
+function2()
+```
