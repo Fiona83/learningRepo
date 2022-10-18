@@ -4,7 +4,7 @@ The purpose of the **unittest** is to check if the functions working properly, d
 Therefore we right a test file with multiple test cases in it to verify the functionality of the functions.
 
 In the path of the software development, after we wrote the functions or modules with multiple functions in it. The first thing to do is do the **unittest**.
-After the code pass the unittest, we send it then to the CD/CI server to test it. 
+After the code pass the unittest, we send it then to the CI/CD server to test it. 
 If it also passes the server test, we can now merge the code into the master branch and deploy it.
 
 ## How does unittest work?
